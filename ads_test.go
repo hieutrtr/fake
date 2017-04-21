@@ -1,10 +1,9 @@
 package fake
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestAds(t *testing.T) {
+	UseExternalData(true)
 	for _, lang := range GetLangs() {
 		SetLang(lang)
 
